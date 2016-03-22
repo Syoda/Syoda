@@ -15,9 +15,9 @@ Tinder for food, get an instant feed of restaurants near you when you're hungry 
 - [ ] Users can receive food suggestions based on previous likes and dislikes
 
 ## Wireframes
-![alt text](wireframes/home.png "Home")
-![alt text](wireframes/details.png "Home")
-![alt text](wireframes/matches.png "Matches")
+![alt text](Wireframes/Home.png "Home")
+![alt text](Wireframes/Details.png "Home")
+![alt text](Wireframes/Matches.png "Matches")
 
 ## License
 
