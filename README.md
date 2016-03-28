@@ -25,8 +25,8 @@ Review
 - time
 
 User
--username
--picture
+- username
+- picture
 
 ## User Stories
 
