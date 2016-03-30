@@ -30,14 +30,14 @@ User
 
 ## User Stories
 
-- [ ] Users can setup their search preferences (distance, cuisine, etc)
-- [ ] Users can swipe right to like a restaurant
-- [ ] Users can swipe left to dislike restaurant
-- [ ] Users can tap on restaurant to get more information
+- [ ] Users can see a list of restaurants close by.
+- [ ] Users can swipe right to like a restaurant.
+- [ ] Users can swipe left to dislike restaurant.
+- [ ] Users can tap on restaurant to get more information.
 
 ## Optional Features
-- [ ] Users can go to restaurants menu, website and other info from profile
-- [ ] Users can receive food suggestions based on previous likes and dislikes
+- [ ] Users can go to restaurants menu, website and other info from profile.
+- [ ] Users can receive food suggestions based on previous likes and dislikes.
 
 ## Wireframes
 ![alt text](Wireframes/Home.png "Home")
