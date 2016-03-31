@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4049EAFD1C893C5600527B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EAFC1C893C5600527B5F /* AppDelegate.swift */; };
-		4049EAFF1C893C5600527B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EAFE1C893C5600527B5F /* ViewController.swift */; };
 		4049EB021C893C5600527B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4049EB001C893C5600527B5F /* Main.storyboard */; };
 		4049EB041C893C5600527B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4049EB031C893C5600527B5F /* Assets.xcassets */; };
 		4049EB071C893C5600527B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4049EB051C893C5600527B5F /* LaunchScreen.storyboard */; };
 		4049EB121C893C5600527B5F /* SyodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EB111C893C5600527B5F /* SyodaTests.swift */; };
 		4049EB1D1C893C5600527B5F /* SyodaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EB1C1C893C5600527B5F /* SyodaUITests.swift */; };
+		B4D1F1F2B1203C0F355FDEE2 /* Pods_Syoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513AB44C501228B181DB2D57 /* Pods_Syoda.framework */; };
+		CF1D49BC1CAC3EE3000D6AE7 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D49BB1CAC3EE3000D6AE7 /* RestaurantsViewController.swift */; };
+		CF1D49BE1CAC418B000D6AE7 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D49BD1CAC418B000D6AE7 /* YelpClient.swift */; };
+		CF1D49C01CAC4362000D6AE7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D49BF1CAC4362000D6AE7 /* Restaurant.swift */; };
+		CF1D49C21CAC48C0000D6AE7 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D49C11CAC48C0000D6AE7 /* RestaurantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C2041D0C15B092CBB21BAF0 /* Pods-Syoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Syoda/Pods-Syoda.debug.xcconfig"; sourceTree = "<group>"; };
 		4049EAF91C893C5600527B5F /* Syoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4049EAFC1C893C5600527B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4049EAFE1C893C5600527B5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4049EB011C893C5600527B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4049EB031C893C5600527B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4049EB061C893C5600527B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		4049EB181C893C5600527B5F /* SyodaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyodaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4049EB1C1C893C5600527B5F /* SyodaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyodaUITests.swift; sourceTree = "<group>"; };
 		4049EB1E1C893C5600527B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513AB44C501228B181DB2D57 /* Pods_Syoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C796B3132561C6C3DF03269A /* Pods-Syoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syoda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Syoda/Pods-Syoda.release.xcconfig"; sourceTree = "<group>"; };
+		CF1D49BB1CAC3EE3000D6AE7 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		CF1D49BD1CAC418B000D6AE7 /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
+		CF1D49BF1CAC4362000D6AE7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		CF1D49C11CAC48C0000D6AE7 /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D1F1F2B1203C0F355FDEE2 /* Pods_Syoda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,8 @@
 				4049EB101C893C5600527B5F /* SyodaTests */,
 				4049EB1B1C893C5600527B5F /* SyodaUITests */,
 				4049EAFA1C893C5600527B5F /* Products */,
+				5B83AD955B2F513FB213CE06 /* Pods */,
+				66DC26C43EECD856C0F36B5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +110,11 @@
 		4049EAFB1C893C5600527B5F /* Syoda */ = {
 			isa = PBXGroup;
 			children = (
+				CF1D49BA1CAC3E79000D6AE7 /* View Controllers */,
+				CF1D49B81CAC3E64000D6AE7 /* API */,
+				CF1D49B71CAC3E4F000D6AE7 /* Models */,
+				CF1D49B61CAC3E43000D6AE7 /* Views */,
 				4049EAFC1C893C5600527B5F /* AppDelegate.swift */,
-				4049EAFE1C893C5600527B5F /* ViewController.swift */,
 				4049EB001C893C5600527B5F /* Main.storyboard */,
 				4049EB031C893C5600527B5F /* Assets.xcassets */,
 				4049EB051C893C5600527B5F /* LaunchScreen.storyboard */,
@@ -125,6 +141,55 @@
 			path = SyodaUITests;
 			sourceTree = "<group>";
 		};
+		5B83AD955B2F513FB213CE06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C2041D0C15B092CBB21BAF0 /* Pods-Syoda.debug.xcconfig */,
+				C796B3132561C6C3DF03269A /* Pods-Syoda.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66DC26C43EECD856C0F36B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				513AB44C501228B181DB2D57 /* Pods_Syoda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1D49B61CAC3E43000D6AE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D49C11CAC48C0000D6AE7 /* RestaurantCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF1D49B71CAC3E4F000D6AE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D49BF1CAC4362000D6AE7 /* Restaurant.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CF1D49B81CAC3E64000D6AE7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D49BD1CAC418B000D6AE7 /* YelpClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		CF1D49BA1CAC3E79000D6AE7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D49BB1CAC3EE3000D6AE7 /* RestaurantsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4049EB211C893C5600527B5F /* Build configuration list for PBXNativeTarget "Syoda" */;
 			buildPhases = (
+				065B0ED3D00454326C3D01F3 /* Check Pods Manifest.lock */,
 				4049EAF51C893C5500527B5F /* Sources */,
 				4049EAF61C893C5500527B5F /* Frameworks */,
 				4049EAF71C893C5500527B5F /* Resources */,
+				0220155621C1AA1E3DA9D032 /* Embed Pods Frameworks */,
+				DE91BE6DF4E3E0850D9CCB63 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +261,7 @@
 				TargetAttributes = {
 					4049EAF81C893C5500527B5F = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CZ4DHG4SWH;
 					};
 					4049EB0C1C893C5600527B5F = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -251,13 +320,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0220155621C1AA1E3DA9D032 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Syoda/Pods-Syoda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		065B0ED3D00454326C3D01F3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE91BE6DF4E3E0850D9CCB63 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Syoda/Pods-Syoda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4049EAF51C893C5500527B5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4049EAFF1C893C5600527B5F /* ViewController.swift in Sources */,
+				CF1D49C21CAC48C0000D6AE7 /* RestaurantCell.swift in Sources */,
+				CF1D49C01CAC4362000D6AE7 /* Restaurant.swift in Sources */,
 				4049EAFD1C893C5600527B5F /* AppDelegate.swift in Sources */,
+				CF1D49BE1CAC418B000D6AE7 /* YelpClient.swift in Sources */,
+				CF1D49BC1CAC3EE3000D6AE7 /* RestaurantsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,23 +515,31 @@
 		};
 		4049EB221C893C5600527B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2041D0C15B092CBB21BAF0 /* Pods-Syoda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Syoda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syoda.Syoda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		4049EB231C893C5600527B5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C796B3132561C6C3DF03269A /* Pods-Syoda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Syoda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syoda.Syoda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +610,7 @@
 				4049EB231C893C5600527B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4049EB241C893C5600527B5F /* Build configuration list for PBXNativeTarget "SyodaTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +619,7 @@
 				4049EB261C893C5600527B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4049EB271C893C5600527B5F /* Build configuration list for PBXNativeTarget "SyodaUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +628,7 @@
 				4049EB291C893C5600527B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
