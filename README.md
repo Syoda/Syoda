@@ -1,7 +1,6 @@
 # Syoda
 CodePath Group Project
-
-Tinder for food, get an instant feed of restaurants near you when you're hungry or looking for something new!
+**Syoda** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api). It is basically like Tinder, but for food, which gives you an instant feed of restaurants near you when you're hungry or looking for something new!
 
 ## APIs
 We will be using the Yelp Search API to find local restaurants around you, and to allow users to enter parameters into what they want to eat.
