@@ -84,14 +84,19 @@ class RestaurantsViewController: UIViewController, CLLocationManagerDelegate, Ko
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as! CardViewController
         addChildViewController(vc)
 
-        print(restaurants)
         let restaurant = restaurants[Int(index)]
         
-        //vc.reviewsLabel.text = restaurant.reviewCount!.stringValue
+        vc.restaurantReviews = restaurant.reviewCount!.stringValue
+        vc.restaurantImageURL = restaurant.imageURL
+        vc.restaurantGenres = restaurant.categories
         vc.restaurantName = restaurant.name
-        //vc.distanceLabel.text = restaurant.distance
+        vc.restaurantDistance = restaurant.distance
+        vc.restaurantDescription = restaurant.snippet_text
+        vc.restaurantRatingURL = restaurant.ratingImageURL
         
         self.didMoveToParentViewController(vc)
+        vc.view.translatesAutoresizingMaskIntoConstraints = false
+
         return vc.view
     }
     

@@ -20,6 +20,8 @@ class Restaurant: NSObject
     let reviewCount: NSNumber?
     let location: CLLocation?
     let websiteUrl: String?
+    let phoneNumber: String?
+    let snippet_text: String?
     
     init(dictionary: NSDictionary)
     {
@@ -116,6 +118,27 @@ class Restaurant: NSObject
         {
             websiteUrl = nil
         }
+        
+        let snippet = dictionary["snippet_text"] as? String
+        if snippet != nil
+        {
+            snippet_text = snippet
+        }
+        else
+        {
+            snippet_text = nil
+        }
+        
+        let phone = dictionary["phone"] as? String
+        if phone != nil
+        {
+            phoneNumber = phone
+        }
+        else
+        {
+            phoneNumber = nil
+        }
+
     }
     
     class func restaurants(array array: [NSDictionary]) -> [Restaurant]
