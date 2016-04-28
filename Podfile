@@ -8,6 +8,8 @@ target 'Syoda' do
 	pod 'BDBOAuth1Manager'
 	pod 'SVPullToRefresh'
 	pod 'SVProgressHUD'
+	pod 'Koloda'
+	pod 'pop'
 end
 
 target 'SyodaTests' do
@@ -18,3 +20,6 @@ target 'SyodaUITests' do
 
 end
 
+post_install do |installer|
+    `find Pods -regex 'Pods/pop.*\\.h' -print0 | xargs -0 sed -i '' 's/\\(<\\)pop\\/\\(.*\\)\\(>\\)/\\"\\2\\"/'`
+end

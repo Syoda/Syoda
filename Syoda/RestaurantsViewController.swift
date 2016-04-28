@@ -11,8 +11,9 @@ import SVPullToRefresh
 import SVProgressHUD
 import MapKit
 import CoreLocation
+import Koloda
 
-class RestaurantsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, CLLocationManagerDelegate
+class RestaurantsViewController: UIViewController, CLLocationManagerDelegate, KolodaViewDelegate, KolodaViewDataSource
 {
     let LIMIT_CONSTANT = 20
 
@@ -20,16 +21,17 @@ class RestaurantsViewController: UIViewController, UICollectionViewDataSource, U
     var locationManager : CLLocationManager!
     var categories: [String]!
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var kolodaView: KolodaView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
+        self.kolodaView.dataSource = self
+        self.kolodaView.delegate = self
         searchRestaurants("Restaurant", offset: 0, sort: YelpSortMode.BestMatched, categories: categories, radius: 20000, deals: false)
         setLocationManager()
+       
     }
     
     // Search for Businesses
@@ -38,7 +40,7 @@ class RestaurantsViewController: UIViewController, UICollectionViewDataSource, U
         Restaurant.searchWithTerm(term!, limit: LIMIT_CONSTANT, offset: offset, sort: sort, categories: categories, radius: radius, deals: deals, completion: { (restaurants: [Restaurant]!, error: NSError!) -> Void in
             
             self.restaurants = restaurants
-            self.collectionView.reloadData()
+            self.kolodaView.reloadData()
         })
     }
     
@@ -52,7 +54,7 @@ class RestaurantsViewController: UIViewController, UICollectionViewDataSource, U
         locationManager.requestWhenInUseAuthorization()
     }
     
-    // Add lcoation manager methods
+    // Add location manager methods
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus)
     {
         if status == CLAuthorizationStatus.AuthorizedWhenInUse
@@ -61,11 +63,16 @@ class RestaurantsViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    override func didReceiveMemoryWarning()
     {
+        super.didReceiveMemoryWarning()
+    }
+    
+    
+    func kolodaNumberOfCards(koloda: KolodaView) -> UInt {
         if let restaurants = restaurants
         {
-            return restaurants.count
+            return UInt(restaurants.count)
         }
         else
         {
@@ -73,16 +80,19 @@ class RestaurantsViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RestaurantCell", forIndexPath: indexPath) as! RestaurantCell
-        cell.restaurant = restaurants[indexPath.row]
-        return cell
-    }
+    func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as! CardViewController
+        addChildViewController(vc)
 
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
+        print(restaurants)
+        let restaurant = restaurants[Int(index)]
+        
+        //vc.reviewsLabel.text = restaurant.reviewCount!.stringValue
+        vc.restaurantName = restaurant.name
+        //vc.distanceLabel.text = restaurant.distance
+        
+        self.didMoveToParentViewController(vc)
+        return vc.view
     }
     
     /*
