@@ -93,6 +93,7 @@ class RestaurantsViewController: UIViewController, CLLocationManagerDelegate, Ko
         vc.restaurantDistance = restaurant.distance
         vc.restaurantDescription = restaurant.snippet_text
         vc.restaurantRatingURL = restaurant.ratingImageURL
+        vc.restaurantNumber = restaurant.phoneNumber
         
         self.didMoveToParentViewController(vc)
         vc.view.translatesAutoresizingMaskIntoConstraints = false

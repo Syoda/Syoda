@@ -26,6 +26,7 @@ class CardViewController: UIViewController {
     var restaurantRatingURL: NSURL?
     var restaurantDescription: String?
     var restaurantGenres: String?
+    var restaurantNumber: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,10 @@ class CardViewController: UIViewController {
     }
     
     @IBAction func onCall(sender: AnyObject) {
+        print(restaurantNumber)
+        if let url = NSURL(string: "tel://\(restaurantNumber!)") {
+            UIApplication.sharedApplication().openURL(url)
+        }
     }
 
     /*
