@@ -102,6 +102,13 @@ class RestaurantsViewController: UIViewController, CLLocationManagerDelegate, Ko
         return vc.view
     }
     
+    @IBAction func onEw(sender: AnyObject) {
+        kolodaView.swipe(SwipeResultDirection.Left)
+    }
+    
+    @IBAction func onYum(sender: AnyObject) {
+        kolodaView.swipe(SwipeResultDirection.Right)
+    }
     /*
     // MARK: - Navigation
 

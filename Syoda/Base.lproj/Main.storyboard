@@ -25,11 +25,17 @@
                                 <rect key="frame" x="312" y="602" width="40" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="😋"/>
+                                <connections>
+                                    <action selector="onYum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Dl-T9-aXB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZJ-LL-zcg">
                                 <rect key="frame" x="20" y="599" width="40" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="😖"/>
+                                <connections>
+                                    <action selector="onEw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="doq-9g-pox"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
