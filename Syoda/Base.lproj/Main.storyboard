@@ -132,7 +132,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.71587171049999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Nlt-YW-xU9" secondAttribute="trailing" constant="8" id="001-l4-Elh"/>
                             <constraint firstItem="vs4-vh-ni5" firstAttribute="top" secondItem="Nlt-YW-xU9" secondAttribute="bottom" constant="8" id="87Y-WS-x4k"/>
@@ -189,7 +189,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="09F-O3-Kw5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.71587171052631571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.18431372549019609" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
