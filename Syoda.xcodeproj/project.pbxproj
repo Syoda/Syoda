@@ -12,8 +12,8 @@
 		4049EB071C893C5600527B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4049EB051C893C5600527B5F /* LaunchScreen.storyboard */; };
 		4049EB121C893C5600527B5F /* SyodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EB111C893C5600527B5F /* SyodaTests.swift */; };
 		4049EB1D1C893C5600527B5F /* SyodaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EB1C1C893C5600527B5F /* SyodaUITests.swift */; };
+		4AD8814C1CD95B4700CC97AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD8814B1CD95B4700CC97AE /* Assets.xcassets */; };
 		4AF176541CCEDFC700A0334B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF176531CCEDFC700A0334B /* Info.plist */; };
-		4AF176581CCEED2E00A0334B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF176571CCEED2E00A0334B /* Images.xcassets */; };
 		4AF1765A1CD0267F00A0334B /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF176591CD0267F00A0334B /* CardViewController.swift */; };
 		B4D1F1F2B1203C0F355FDEE2 /* Pods_Syoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513AB44C501228B181DB2D57 /* Pods_Syoda.framework */; };
 		CF1D49BC1CAC3EE3000D6AE7 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D49BB1CAC3EE3000D6AE7 /* RestaurantsViewController.swift */; };
@@ -51,8 +51,8 @@
 		4049EB181C893C5600527B5F /* SyodaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyodaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4049EB1C1C893C5600527B5F /* SyodaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyodaUITests.swift; sourceTree = "<group>"; };
 		4049EB1E1C893C5600527B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD8814B1CD95B4700CC97AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		4AF176531CCEDFC700A0334B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AF176571CCEED2E00A0334B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4AF176591CD0267F00A0334B /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		513AB44C501228B181DB2D57 /* Pods_Syoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C796B3132561C6C3DF03269A /* Pods-Syoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syoda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Syoda/Pods-Syoda.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 				CF1D49B71CAC3E4F000D6AE7 /* Models */,
 				CF1D49B61CAC3E43000D6AE7 /* Views */,
 				4049EAFC1C893C5600527B5F /* AppDelegate.swift */,
-				4AF176571CCEED2E00A0334B /* Images.xcassets */,
 				4049EB001C893C5600527B5F /* Main.storyboard */,
+				4AD8814B1CD95B4700CC97AE /* Assets.xcassets */,
 				4049EB051C893C5600527B5F /* LaunchScreen.storyboard */,
 				4AF176531CCEDFC700A0334B /* Info.plist */,
 			);
@@ -303,8 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AF176541CCEDFC700A0334B /* Info.plist in Resources */,
-				4AF176581CCEED2E00A0334B /* Images.xcassets in Resources */,
 				4049EB071C893C5600527B5F /* LaunchScreen.storyboard in Resources */,
+				4AD8814C1CD95B4700CC97AE /* Assets.xcassets in Resources */,
 				4049EB021C893C5600527B5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

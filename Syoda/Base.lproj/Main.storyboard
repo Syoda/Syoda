@@ -21,6 +21,16 @@
                                 <rect key="frame" x="20" y="106" width="335" height="475"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-Zg-cLO">
+                                <rect key="frame" x="312" y="602" width="40" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="😋"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZJ-LL-zcg">
+                                <rect key="frame" x="20" y="599" width="40" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="😖"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -108,6 +118,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uq2-8x-jiq">
                                 <rect key="frame" x="8" y="317" width="144" height="20"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrK-2a-V3V">
+                                <rect key="frame" x="347" y="418" width="20" height="20"/>
+                                <state key="normal" image="directions"/>
+                                <connections>
+                                    <action selector="onDirections:" destination="Zp6-bR-CbG" eventType="touchUpInside" id="ZMR-Wn-Xqt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.71587171049999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -116,16 +133,19 @@
                             <constraint firstItem="cAV-Lr-VC0" firstAttribute="bottom" secondItem="uq2-8x-jiq" secondAttribute="bottom" id="Avl-Cj-tgo"/>
                             <constraint firstItem="uq2-8x-jiq" firstAttribute="leading" secondItem="0Q0-dB-QKA" secondAttribute="leading" id="FQO-t1-XIG"/>
                             <constraint firstItem="ZuA-JI-Ifv" firstAttribute="leading" secondItem="cUQ-gy-dFo" secondAttribute="leading" id="G2m-7L-wKX"/>
+                            <constraint firstItem="WrK-2a-V3V" firstAttribute="top" secondItem="vs4-vh-ni5" secondAttribute="bottom" constant="12" id="GJ2-O9-VeA"/>
                             <constraint firstItem="DK6-7u-Z6I" firstAttribute="leading" secondItem="cUQ-gy-dFo" secondAttribute="leading" constant="8" id="GQH-8Z-kxF"/>
                             <constraint firstItem="nPk-0T-91x" firstAttribute="leading" secondItem="0Q0-dB-QKA" secondAttribute="trailing" constant="8" id="HUp-KN-i8e"/>
                             <constraint firstAttribute="trailing" secondItem="nPk-0T-91x" secondAttribute="trailing" constant="8" id="Htv-ac-prD"/>
                             <constraint firstAttribute="trailing" secondItem="ZuA-JI-Ifv" secondAttribute="trailing" id="JkC-vb-HVB"/>
+                            <constraint firstAttribute="trailing" secondItem="WrK-2a-V3V" secondAttribute="trailing" constant="8" id="LHT-gV-gz7"/>
                             <constraint firstItem="4vc-Sc-w9G" firstAttribute="bottom" secondItem="uq2-8x-jiq" secondAttribute="bottom" id="NB0-e1-3UI"/>
                             <constraint firstItem="nPk-0T-91x" firstAttribute="baseline" secondItem="0Q0-dB-QKA" secondAttribute="baseline" id="RGx-VY-GzE"/>
                             <constraint firstItem="VUw-Ha-nMe" firstAttribute="top" secondItem="xg5-zq-FW3" secondAttribute="bottom" constant="8" id="T2h-Rk-Nil"/>
                             <constraint firstItem="xg5-zq-FW3" firstAttribute="top" secondItem="vs4-vh-ni5" secondAttribute="bottom" constant="12" id="UTh-Pf-6YP"/>
                             <constraint firstItem="cAV-Lr-VC0" firstAttribute="leading" secondItem="uq2-8x-jiq" secondAttribute="trailing" constant="4" id="WgN-Pu-bqi"/>
                             <constraint firstItem="DK6-7u-Z6I" firstAttribute="top" secondItem="uq2-8x-jiq" secondAttribute="bottom" constant="8" id="Wkm-gq-cty"/>
+                            <constraint firstItem="VUw-Ha-nMe" firstAttribute="top" secondItem="WrK-2a-V3V" secondAttribute="bottom" constant="8" id="bjx-QJ-873"/>
                             <constraint firstItem="0Q0-dB-QKA" firstAttribute="top" secondItem="ZuA-JI-Ifv" secondAttribute="bottom" constant="8" id="e1j-yn-bdM"/>
                             <constraint firstItem="Nlt-YW-xU9" firstAttribute="top" secondItem="DK6-7u-Z6I" secondAttribute="bottom" constant="8" id="eNN-vm-6lq"/>
                             <constraint firstItem="vs4-vh-ni5" firstAttribute="centerX" secondItem="cUQ-gy-dFo" secondAttribute="centerX" id="j1b-eb-JPa"/>
@@ -176,6 +196,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="directions" width="40" height="40"/>
         <image name="phone" width="36" height="36"/>
     </resources>
 </document>

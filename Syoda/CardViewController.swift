@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
 class CardViewController: UIViewController {
 
@@ -27,6 +29,7 @@ class CardViewController: UIViewController {
     var restaurantDescription: String?
     var restaurantGenres: String?
     var restaurantNumber: String?
+    var restaurantAddress: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +63,28 @@ class CardViewController: UIViewController {
         }
     }
 
+    @IBAction func onDirections(sender: AnyObject) {
+        
+        let geocoder = CLGeocoder()
+        
+        geocoder.geocodeAddressString(restaurantAddress!, completionHandler: {(placemarks, error) -> Void in
+            if((error) != nil){
+                print("Error", error)
+            }
+            if let clPlacemark = placemarks?.first {
+                let addressDict = clPlacemark.addressDictionary as? [String: AnyObject]
+                let coordinate = clPlacemark.location!.coordinate
+                let mkPlacemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
+                let mapItem = MKMapItem(placemark: mkPlacemark)
+                let options = ["MKLaunchOptionsDirectionsModeKey":
+                    "MKLaunchOptionsDirectionsModeDriving",
+                    "MKLaunchOptionsShowsTrafficKey": true]
+                mapItem.openInMapsWithLaunchOptions(options)
+            }
+        })
+
+        
+    }
     /*
     // MARK: - Navigation
 
