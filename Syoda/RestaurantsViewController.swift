@@ -98,6 +98,11 @@ class RestaurantsViewController: UIViewController, CLLocationManagerDelegate, Ko
         
         self.didMoveToParentViewController(vc)
         vc.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        vc.view.layer.shadowOpacity = 0.7
+        vc.view.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        vc.view.layer.shadowOffset = CGSize(width: 3.0, height: 2.0)
+        vc.view.layer.shadowRadius = 5.0
 
         return vc.view
     }
