@@ -119,4 +119,5 @@ class YelpClient: BDBOAuth1RequestOperationManager
             { (operation: AFHTTPRequestOperation?, error: NSError!) -> Void in
         })!
     }
+    
 }

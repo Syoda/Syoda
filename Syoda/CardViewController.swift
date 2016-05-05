@@ -21,31 +21,24 @@ class CardViewController: UIViewController {
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var restaurantName: String?
-    var restaurantImageURL: NSURL?
-    var restaurantDistance: String?
-    var restaurantReviews: String?
-    var restaurantRatingURL: NSURL?
-    var restaurantDescription: String?
-    var restaurantGenres: String?
-    var restaurantNumber: String?
-    var restaurantAddress: String?
+    var restaurant: Restaurant?
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+                
         // Do any additional setup after loading the view.
-        restaurantLabel.text = restaurantName
-        distanceLabel.text = restaurantDistance
-        reviewsLabel.text = restaurantReviews
-        descriptionLabel.text = restaurantDescription
-        genreLabel.text = restaurantGenres
-        if let restaurantImageURL = restaurantImageURL
+        restaurantLabel.text = restaurant!.name
+        distanceLabel.text = restaurant!.distance
+        reviewsLabel.text =  restaurant!.reviewCount!.stringValue + " reviews"
+        descriptionLabel.text = restaurant!.snippet_text
+        genreLabel.text = restaurant!.categories
+        if let restaurantImageURL = restaurant!.imageURL
         {
             restaurantImageView.setImageWithURL(restaurantImageURL)
         }
         
-        if let ratingImageURL = restaurantRatingURL
+        if let ratingImageURL = restaurant!.ratingImageURL
         {
             ratingImageView.setImageWithURL(ratingImageURL)
         }
@@ -57,8 +50,7 @@ class CardViewController: UIViewController {
     }
     
     @IBAction func onCall(sender: AnyObject) {
-        print(restaurantNumber)
-        if let url = NSURL(string: "tel://\(restaurantNumber!)") {
+        if let url = NSURL(string: "tel://\(restaurant!.phoneNumber)") {
             UIApplication.sharedApplication().openURL(url)
         }
     }
@@ -67,7 +59,7 @@ class CardViewController: UIViewController {
         
         let geocoder = CLGeocoder()
         
-        geocoder.geocodeAddressString(restaurantAddress!, completionHandler: {(placemarks, error) -> Void in
+        geocoder.geocodeAddressString(restaurant!.address!, completionHandler: {(placemarks, error) -> Void in
             if((error) != nil){
                 print("Error", error)
             }
@@ -85,6 +77,19 @@ class CardViewController: UIViewController {
 
         
     }
+    
+    @IBAction func onReadMore(sender: AnyObject) {
+        performSegueWithIdentifier("info", sender: sender)
+
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "info" {
+            let vc = segue.destinationViewController as! RestaurantDetailViewController
+            vc.restaurant = self.restaurant
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

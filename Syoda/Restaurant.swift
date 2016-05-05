@@ -11,6 +11,7 @@ import CoreLocation
 
 class Restaurant: NSObject
 {
+    let id: String?
     let name: String?
     let address: String?
     let imageURL: NSURL?
@@ -22,9 +23,12 @@ class Restaurant: NSObject
     let websiteUrl: String?
     let phoneNumber: String?
     let snippet_text: String?
+    let menu: String?
     
     init(dictionary: NSDictionary)
     {
+        id = dictionary["id"] as? String
+        
         name = dictionary["name"] as? String
         //print(dictionary)
         let imageURLString = dictionary["image_url"] as? String
@@ -137,6 +141,16 @@ class Restaurant: NSObject
         else
         {
             phoneNumber = nil
+        }
+        
+        let menu_p = dictionary["menu_provider"] as? String
+        if menu_p != nil
+        {
+            menu = menu_p
+        }
+        else
+        {
+            menu = nil
         }
 
     }

@@ -13,6 +13,7 @@
 		4049EB121C893C5600527B5F /* SyodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EB111C893C5600527B5F /* SyodaTests.swift */; };
 		4049EB1D1C893C5600527B5F /* SyodaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049EB1C1C893C5600527B5F /* SyodaUITests.swift */; };
 		4AD8814C1CD95B4700CC97AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD8814B1CD95B4700CC97AE /* Assets.xcassets */; };
+		4AE8F4A01CDB293E00EA880A /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8F49F1CDB293E00EA880A /* RestaurantDetailViewController.swift */; };
 		4AF176541CCEDFC700A0334B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF176531CCEDFC700A0334B /* Info.plist */; };
 		4AF1765A1CD0267F00A0334B /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF176591CD0267F00A0334B /* CardViewController.swift */; };
 		B4D1F1F2B1203C0F355FDEE2 /* Pods_Syoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513AB44C501228B181DB2D57 /* Pods_Syoda.framework */; };
@@ -52,6 +53,7 @@
 		4049EB1C1C893C5600527B5F /* SyodaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyodaUITests.swift; sourceTree = "<group>"; };
 		4049EB1E1C893C5600527B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AD8814B1CD95B4700CC97AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		4AE8F49F1CDB293E00EA880A /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		4AF176531CCEDFC700A0334B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF176591CD0267F00A0334B /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		513AB44C501228B181DB2D57 /* Pods_Syoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 			children = (
 				CF1D49BB1CAC3EE3000D6AE7 /* RestaurantsViewController.swift */,
 				4AF176591CD0267F00A0334B /* CardViewController.swift */,
+				4AE8F49F1CDB293E00EA880A /* RestaurantDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				4AF1765A1CD0267F00A0334B /* CardViewController.swift in Sources */,
 				4049EAFD1C893C5600527B5F /* AppDelegate.swift in Sources */,
 				CF1D49BE1CAC418B000D6AE7 /* YelpClient.swift in Sources */,
+				4AE8F4A01CDB293E00EA880A /* RestaurantDetailViewController.swift in Sources */,
 				CF1D49BC1CAC3EE3000D6AE7 /* RestaurantsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
