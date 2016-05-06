@@ -139,7 +139,7 @@
                                 <color key="textColor" red="0.0" green="0.1843137255" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCv-EI-v0h">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCv-EI-v0h">
                                 <rect key="frame" x="8" y="384" width="359" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal">
@@ -147,6 +147,13 @@
                                 </state>
                                 <connections>
                                     <action selector="onReadMore:" destination="Zp6-bR-CbG" eventType="touchUpInside" id="LT0-po-TQC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC5-zj-1Yz">
+                                <rect key="frame" x="177" y="418" width="20" height="20"/>
+                                <state key="normal" image="yelp"/>
+                                <connections>
+                                    <action selector="onYelp:" destination="Zp6-bR-CbG" eventType="touchUpInside" id="YTV-mh-f1j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,6 +171,7 @@
                             <constraint firstAttribute="trailing" secondItem="ZuA-JI-Ifv" secondAttribute="trailing" id="JkC-vb-HVB"/>
                             <constraint firstItem="cAV-Lr-VC0" firstAttribute="leading" secondItem="uq2-8x-jiq" secondAttribute="trailing" constant="8" id="KRJ-g7-elM"/>
                             <constraint firstAttribute="trailing" secondItem="WrK-2a-V3V" secondAttribute="trailing" constant="8" id="LHT-gV-gz7"/>
+                            <constraint firstItem="WrK-2a-V3V" firstAttribute="leading" secondItem="mC5-zj-1Yz" secondAttribute="trailing" constant="150" id="MOI-MV-xKp"/>
                             <constraint firstItem="nPk-0T-91x" firstAttribute="baseline" secondItem="0Q0-dB-QKA" secondAttribute="baseline" id="RGx-VY-GzE"/>
                             <constraint firstItem="VUw-Ha-nMe" firstAttribute="top" secondItem="xg5-zq-FW3" secondAttribute="bottom" constant="8" id="T2h-Rk-Nil"/>
                             <constraint firstItem="xg5-zq-FW3" firstAttribute="top" secondItem="vs4-vh-ni5" secondAttribute="bottom" constant="12" id="UTh-Pf-6YP"/>
@@ -174,9 +182,11 @@
                             <constraint firstItem="vs4-vh-ni5" firstAttribute="centerX" secondItem="cUQ-gy-dFo" secondAttribute="centerX" id="j1b-eb-JPa"/>
                             <constraint firstItem="uq2-8x-jiq" firstAttribute="leading" secondItem="cUQ-gy-dFo" secondAttribute="leading" constant="8" id="lS2-z1-6mY"/>
                             <constraint firstItem="0Q0-dB-QKA" firstAttribute="leading" secondItem="cUQ-gy-dFo" secondAttribute="leading" constant="8" id="q9o-y8-7h5"/>
+                            <constraint firstItem="mC5-zj-1Yz" firstAttribute="top" secondItem="KCv-EI-v0h" secondAttribute="bottom" constant="5" id="rqY-TW-QNN"/>
                             <constraint firstItem="ZuA-JI-Ifv" firstAttribute="top" secondItem="cUQ-gy-dFo" secondAttribute="top" id="rxm-ym-xRi"/>
                             <constraint firstItem="uq2-8x-jiq" firstAttribute="top" secondItem="0Q0-dB-QKA" secondAttribute="bottom" constant="4" id="t4r-Ky-vkf"/>
                             <constraint firstItem="xg5-zq-FW3" firstAttribute="leading" secondItem="cUQ-gy-dFo" secondAttribute="leading" constant="8" id="ukc-zf-AIz"/>
+                            <constraint firstItem="mC5-zj-1Yz" firstAttribute="leading" secondItem="xg5-zq-FW3" secondAttribute="trailing" constant="149" id="w8W-eA-Pwl"/>
                             <constraint firstItem="Nlt-YW-xU9" firstAttribute="leading" secondItem="cUQ-gy-dFo" secondAttribute="leading" constant="8" id="xzJ-u0-o7m"/>
                         </constraints>
                     </view>
@@ -350,5 +360,6 @@
     <resources>
         <image name="directions" width="40" height="40"/>
         <image name="phone" width="36" height="36"/>
+        <image name="yelp" width="33" height="40"/>
     </resources>
 </document>

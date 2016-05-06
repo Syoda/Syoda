@@ -89,7 +89,12 @@ class CardViewController: UIViewController {
             vc.restaurant = self.restaurant
         }
     }
-    
+
+    @IBAction func onYelp(sender: AnyObject) {
+        if let url = NSURL(string: "yelp:///biz/\(restaurant?.id)"){
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
     /*
     // MARK: - Navigation
 
